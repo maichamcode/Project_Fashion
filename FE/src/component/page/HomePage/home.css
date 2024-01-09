@@ -1,0 +1,108 @@
+/* In your CSS file or within your React component's style block */
+.flip-card {
+    width: 300px;
+    /* Adjust the width as needed */
+    height: 60px;
+    /* Adjust the height as needed */
+    perspective: 1000px;
+    border-radius: 5px
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 30%;
+    border-radius: 5px
+
+    /* Automatic flipping animation */
+}
+
+@keyframes flipAnimation {
+    0% {
+        transform: rotateX(90deg);
+        transform-origin: bottom;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: bottom;
+    }
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.countdown-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: calc(25% - 5px);
+    /* 25% width with a 5px gap */
+    margin: 0 5px;
+    position: relative;
+    border-radius: 5px
+}
+.countdown-item-inner {
+    /* Kiểu dáng bổ sung cho div bên trong để che phủ div bên ngoài */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0, 0, 0);
+    z-index: 1;
+    border-radius: 5px
+    /* Đảm bảo nó nằm dưới span */
+
+    /* Những kiểu dáng hiện có cho .countdown-item-inner */
+}
+.flipped {
+    background-color: black;
+    border-radius:5px
+    /* transform-style: preserve-3d;
+    transition: transform 0.5s;
+    animation: flipAnimation 0.6s infinite alternate; */
+}
+.flippeds {
+    /* height: 200%; */
+    width: 100%;
+    background-color: rgb(159, 154, 154);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    animation: flipAnimation 1.01s infinite ;
+    border-radius:5px
+    
+}.flippeds1 {
+    /* height: 200%; */
+    width: 100%;
+    background-color: rgb(102, 101, 101);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    animation: flipAnimation 1s infinite;
+    border-radius: 5px
+
+}
+
+.inner-wrapper {
+    /* Additional styles for the inner wrapper to keep the span fixed */
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px
+}

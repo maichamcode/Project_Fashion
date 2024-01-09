@@ -1,0 +1,35 @@
+.custom-link {
+    color: brown;
+    padding: 8px;
+    text-decoration: none;
+    position: relative;
+}
+
+.custom-input {
+    border: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    /* Lệch sang bên trái và đi lên */
+    transition: transform 0.3s;
+    padding: 8px;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    /* Ngăn ô input nhận tương tác chuột */
+}
+
+.custom-link:hover .custom-input {
+    transform: translate(-110%, -89%);
+    /* Khi hover, di chuyển ô input xuống và về giữa */
+    opacity: 1;
+    /* Hiện ô input */
+    pointer-events: auto;
+    /* Cho phép ô input nhận tương tác chuột */
+}
+
+.custom-input:focus {
+    transform: translate(-50%, 0);
+    /* Khi ô input được focus, di chuyển xuống và về giữa */
+}

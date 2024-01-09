@@ -1,0 +1,18 @@
+.table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .table th, .table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .table img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Add this temporary style to your component for debugging */
+
+  
+  

@@ -1,0 +1,22 @@
+/* Để thu nhỏ kích thước của Legend */
+.recharts-legend {
+    font-size: 1px;
+}
+
+.legend-item {
+    font-size: 1px;
+}
+
+/* Để chỉnh màu văn bản của Legend (nếu cần) */
+.recharts-legend-text {
+    fill: #333;
+    /* Màu văn bản tùy chỉnh */
+}
+
+/* Để chỉnh màu biểu đồ chấm trong Legend (nếu cần) */
+.recharts-legend-item {
+    .recharts-legend-item-icon {
+        background-color: #ff5733;
+        /* Màu chấm tùy chỉnh */
+    }
+}

@@ -1,0 +1,26 @@
+.image-carousel {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  gap: 20px;
+  /* Khoảng cách giữa ảnh lớn và ảnh nhỏ */
+}
+
+.large-image {
+  grid-column: 1;
+}
+
+.small-images {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Khoảng cách giữa các ảnh nhỏ */
+}
+
+.small-image {
+  max-width: 100%;
+}
+
+.slider {
+  transform: none
+}

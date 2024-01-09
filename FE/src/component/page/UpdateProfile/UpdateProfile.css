@@ -1,0 +1,25 @@
+.custom-button {
+    width: 150px;
+    height: 40px;
+    background:#000 ;  /* Màu nền đen */
+    color: #fff;      /* Màu chữ trắng */
+    /* transition: background 0.3s, color 0.3s; Hiệu ứng chuyển đổi màu khi hover */
+}
+
+.custom-button:hover {
+    background: #000;  /* Màu nền trắng khi hover */
+    color: #fff;      /* Màu chữ đen khi hover */
+}
+.cancel-button {
+    width: 150px;
+    height: 40px;
+    background: #fff; /* Màu nền trắng */
+    color: #000;    /* Màu chữ đen */
+    border: 2px solid #000; /* Đường viền đen */
+    transition: background 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi màu khi hover */
+}
+
+.cancel-button:hover {
+    background: #000;  /* Màu nền đen khi hover */
+    color: #fff;      /* Màu chữ trắng khi hover */
+}

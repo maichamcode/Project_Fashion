@@ -1,0 +1,42 @@
+/* Đảm bảo input và button nằm dưới chữ "Mã Giảm Giá" và cách nhau */
+ul.list_2 li:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Định dạng input mã giảm giá */
+  ul.list_2 li:nth-child(3) input[type="text"] {
+    /* width: 100px; */
+    /* padding: 5px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 243px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+    padding-left: 10px;
+    background-color: #e0f2f1;
+
+  
+  }
+  ul.list_2 li:nth-child(3) input[type="text"]:focus {
+    border-color: #007bff; /* Màu viền xanh khi input được focus */
+   
+  }
+
+  
+  /* Định dạng nút "Áp dụng" */
+  ul.list_2 li:nth-child(3) button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    /* padding: 5px 10px; */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px; /* Điều chỉnh khoảng cách giữa input và nút */
+ 
+    
+  }
+  

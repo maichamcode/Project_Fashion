@@ -1,0 +1,23 @@
+/* Đặt phần số giảm giá ở góc trái */
+.product_sale_label {
+    position: absolute;
+    top: 10px; /* Điều chỉnh khoảng cách từ trên xuống */
+    left: 15px; /* Điều chỉnh khoảng cách từ trái sang phải */
+    background-color: red; /* Màu nền của số giảm giá */
+    color: white; /* Màu chữ số giảm giá */
+    padding: 5px; /* Khoảng cách xung quanh số giảm giá */
+    border-radius: 5px; /* Bo góc số giảm giá */
+    z-index: 1; /* Đảm bảo số giảm giá hiển thị trên ảnh */
+  }
+  
+  /* Đảm bảo phần số giảm giá hiển thị trên ảnh */
+  .product_image_container {
+    position: relative;
+  }
+  
+  /* Điều chỉnh kích thước ảnh sản phẩm */
+  .product_image {
+    width: 100%; /* Đảm bảo ảnh lấp đầy khu vực sản phẩm */
+    height: auto; /* Để giữ tỷ lệ khung hình ban đầu */
+  }
+  
